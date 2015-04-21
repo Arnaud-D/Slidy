@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Demo Slidy</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="slidy.css">	
+	</head>
+	<body>
+		<div class="page-slider" id="introduction">
+			<a href="#presentation" class="nextPage">Bas</a>
+		</div>
+		<div class="page-slider" id="presentation">
+			<a href="#introduction" class="previousPage">Haut</a>
+		</div>
+		<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+		<script src="slidy.js"></script>
+		<script>
+			Library.pageSlider();
+			Library.slowScrolling('slow');
+		</script>
+	</body>
+</html>

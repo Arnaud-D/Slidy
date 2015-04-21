@@ -1,0 +1,20 @@
+/*************
+** OBJECTS
+**************/
+
+/** CONTENT & BASE **/
+
+.page-slider{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	left: 0px;
+	height: 100%;
+}
+
+/** TOOLS **/
+
+.page-slider .nextPage, .page-slider .previousPage{
+	font-size: 60px;
+	display: block;
+}
