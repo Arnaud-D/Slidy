@@ -1,4 +1,4 @@
-var Library = {
+var Slidy = {
 	//Create a slider system in .book for every .page
 	pageSlider : function(){
 		var pages_number = $('.page-slider').length;

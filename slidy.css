@@ -1,9 +1,3 @@
-/*************
-** OBJECTS
-**************/
-
-/** CONTENT & BASE **/
-
 .page-slider{
 	position: absolute;
 	top: 0px;
@@ -12,9 +6,14 @@
 	height: 100%;
 }
 
-/** TOOLS **/
-
 .page-slider .nextPage, .page-slider .previousPage{
 	font-size: 60px;
 	display: block;
+}
+
+/* FUNCTIONS */
+
+/** Delete Vertical Bar in Navigator **/
+.overflowYHidden{
+	overflow-y: hidden;
 }

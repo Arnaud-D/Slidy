@@ -3,20 +3,41 @@
 	<head>
 		<title>Demo Slidy</title>
 		<meta charset="utf-8">
-		<link rel="stylesheet" href="slidy.css">	
+		<link rel="stylesheet" href="slidy.css">
+		<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">	
 	</head>
-	<body>
-		<div class="page-slider" id="introduction">
-			<a href="#presentation" class="nextPage">Bas</a>
+	<body class="overflowYHidden">
+		<div id="content">
+			<!-- FULL PAGE !-->
+			<div class="page-slider" id="introduction">
+				<a href="#presentation" class="nextPage"><span class="ion-arrow-down-b"></span></a>
+			</div>
+			<!-- FULL PAGE !-->
+			<div class="page-slider" id="presentation">
+				<a href="#introduction" class="previousPage"><span class="ion-arrow-up-b"></span></a>
+			</div>
 		</div>
-		<div class="page-slider" id="presentation">
-			<a href="#introduction" class="previousPage">Haut</a>
-		</div>
+		<!-- jQuery !-->
 		<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+		<!-- Functions Slidy with jQuery and JS !-->
 		<script src="slidy.js"></script>
 		<script>
-			Library.pageSlider();
-			Library.slowScrolling('slow');
+			//Generate full page for .page-slider
+			Slidy.pageSlider();
+			//Generate slow scrolling (slide-effect)
+			Slidy.slowScrolling('slow');
 		</script>
 	</body>
+	<style>
+		/* My CSS */
+		#introduction{
+			background-color: #124E83;
+			text-align: center;
+		}#presentation{
+			background-color: #AF1332;
+			text-align: center;
+		}a{
+			color: #FFFFFF;
+		}
+	</style>
 </html>
