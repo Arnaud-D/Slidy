@@ -7,7 +7,7 @@ var Slidy = {
 		for(i = 0; i < pages_number; i++){
 			if(!i == 0){
 				top += 100;
-				$('.page-slider:eq('+ i +')').css('top', top + '%');
+				$('.page-slider').eq(i).css('top', top + '%');
 			}
 		}
 	},
