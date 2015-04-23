@@ -14,10 +14,7 @@ var Slidy = {
 
 	//Create a slow scrolling about body
 	slowScrolling : function(timing){
-		//Default value
-		if(typeof(timing) == 'undefined'){
-			timing = 'slow';
-		}
+		timing = timing || 'slow';
 
 		$('a[href^="#"]').click(function(){
 			var the_id = $(this).attr("href");
